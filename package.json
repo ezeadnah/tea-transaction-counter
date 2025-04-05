@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "wagmi": "^1.4.0"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.0.3",
-    "vite": "^4.4.5"
+  "@web3modal/wagmi": "^4.1.7",
+  "wagmi": "^2.12.1",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "viem": "^2.9.16"
+},
+"devDependencies": {
+  "@vitejs/plugin-react": "^4.2.1",
+  "vite": "^5.1.4"
   }
 }
