@@ -1,3 +1,21 @@
+import { useEffect } from 'react'
+
+// Add this before any component logic
+if (typeof window !== 'undefined') {
+  if (window.ethereum && !window.ethereum._initialized) {
+    Object.defineProperty(window, 'ethereum', {
+      value: window.ethereum,
+      configurable: false,
+      writable: false
+    })
+    window.ethereum._initialized = true
+  }
+}
+
+export default function App() {
+  // Your app logic...
+}
+
 import { useState } from 'react'
 import { WagmiConfig, createConfig, configureChains } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
